@@ -12,14 +12,14 @@ public class Jogo {   // Criação da classe principal main, que inicializa o pr
     String opNivel = "0";	// Criação da variável que recebe a opção do Nível do jogo
 
         do {
-			Scanner teclado = new Scanner(System.in);
+        	Scanner teclado = new Scanner(System.in);
             System.out.println("JOGO DA VELHA");
             System.out.println("#############");
             System.out.println("Escolha o nível de dificuldade do jogo (A | B | C):");
 
             opNivel = teclado.next().toUpperCase();
 
-            switch(opNivel) {
+            switch(opNivel) {	// Seleção de qual Computador será chamado para jogar
             	case "A": computador = new ComputadorA(); break;
                 case "B": computador = new ComputadorB(); break;
                 case "C": computador = new ComputadorC(); break;
@@ -42,7 +42,7 @@ public class Jogo {   // Criação da classe principal main, que inicializa o pr
                 jogador.jogar(tabuleiro);
                 vez = 2;	// Passa a vez da jogada para o Computador
             }
-            else if(vez == 2) {	
+            else if(vez == 2) {
                 computador.jogar(tabuleiro);
                 vez = 1;
             }

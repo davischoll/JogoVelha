@@ -29,6 +29,10 @@ public class Jogador {
         }
     }
 
+    /*
+     *  Método que verifica se houve um ganhador e retorna o número de quem ganhou:
+     *  1: Jogador Humano; 2: Computador; 3: Empate.
+     */
     public int validaGanhador(Tabuleiro tabuleiro) {
         ArrayList<Integer> posicoesMarcadas = tabuleiro.getPosicaoTab();
 

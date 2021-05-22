@@ -3,7 +3,7 @@ package uninter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Tabuleiro {  // Inicia variáveis e cria métodos da Classe Tabuleiro
+public class Tabuleiro {  // Inicia atributos e cria métodos da Classe Tabuleiro
 
     private String[][] tabuleiro = { 
         { "[ ]", " ", "[ ]", " ", "[ ]" },
